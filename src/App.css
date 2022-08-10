@@ -115,18 +115,18 @@
   color: black;
 }
 .profile{
-  background-color: brown;
+  /* background-color: brown; */
   width: 1000px;
   height: 1000px;
 }
 .topProfile{
-  background-color: blue;
+  /* background-color: blue; */
   width: 950px;
   height: 220px;
   display: flex;
 }
 .profileImg{
-  background-color: red;
+  /* background-color: red; */
   width: 330px;
   height: 220px;
   display: flex;
@@ -147,7 +147,7 @@
   border-radius: 50%;
 }
 .profileDetails{
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
   /* justify-content: space-around; */
   flex-direction: column;
@@ -177,6 +177,9 @@
   font-size: 18px;
   margin-bottom: 20px;
   margin-right: 40px;
+}
+.profileDeatilsMiddle > div > span{
+  font-weight: bold;
 }
 .profileDeatilsBottom{
   font-weight: bold;
