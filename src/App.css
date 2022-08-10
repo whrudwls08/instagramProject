@@ -113,3 +113,26 @@
 .userStoreListName{
   color: black;
 }
+.profile{
+  background-color: brown;
+  width: 1000px;
+  height: 1000px;
+}
+.topProfile{
+  background-color: blue;
+  width: 900px;
+  height: 220px;
+  display: flex;
+
+}
+.profileImg{
+  background-color: cornflowerblue;
+  width: 220px;
+  height: 220px;
+  
+}
+.profileDetails{
+  background-color: teal;
+  width: 400px;
+  height: 220px;
+}

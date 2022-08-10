@@ -1,14 +1,17 @@
 import './App.css';
 import { useState } from 'react';
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Home from './routers/home.js'
+import MyPage from './routers/myPage.js'
 
 function App() {
   let [option] = useState(['home','dm','new','star','heart','myPage'])
-  let [users] = useState(['조경진','김종국','유재석','강호동'])
+  let navigate = useNavigate();
   return (
     <div className="App">
       
       <div className="navMenu">
-        <div className="navTitle">
+        <div className="navTitle" onClick={()=>{navigate('/home')}}>
           Jostagram
         </div>
         <div className="navInput">
@@ -18,53 +21,29 @@ function App() {
           {
             option.map((val, index)=>{
               return(
-                <NavOption val={val} index={index}/>
+                <NavOption val={val} index={index} navigate={navigate} />
               )
             })   
           }
         </div>
       </div>
-        <div className="section">
-          <div className='usersPost'>
-            <div className='userStore'> 
-              <div className='userStoreList'>
-              {
-                users.map((val, index)=>{
-                  return(
-                    <UserStoreList val={val} index={index}/>
-                  )
-                })
-              }
-              </div>
-            </div>
-            <div className='userPost'>
-            </div>
-          </div>
-          <div className="newFriend">
-
-          </div>
-        </div>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/home" element={<Home />}/>
+        <Route path="/myPage" element={<MyPage/>}/>
+        {/* <Route path="/cart" element={<div></div>}/>
+        <Route path="/cart" element={<div></div>}/>
+        <Route path="/cart" element={<div></div>}/> */}
+      </Routes>
     </div>
   );
 }
 function NavOption(props){
   return(
-    <div className={'navOption' + props.val +' subOption'} >
-      <img src={'./img/'+props.val+'.png'} alt="optionList" onClick={()=>{
-      }}></img>
+    <div className={'navOption' + props.val +' subOption'} onClick ={()=>{props.navigate('/'+props.val)}} >
+      <img src={'./img/'+props.val+'.png'} alt="optionList" ></img>
     </div> 
   )
 }
 
-function UserStoreList(props){
-  return(
-    <div className='userStoreListuserList'>
-      <div className={'userStoreListuserList'+props.index+' userImage'}>
-      </div>
-      <div className='userStoreListName'>
-        <span>{props.val}</span>
-      </div>
-    </div>
-  )
-}
 export default App;
