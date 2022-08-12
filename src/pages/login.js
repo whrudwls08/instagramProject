@@ -1,4 +1,4 @@
-function Login() {
+function Login(props) {
   return(
     <div className="section">
       <div className="loginForm">
@@ -11,7 +11,12 @@ function Login() {
         <div className="loginFormPw">
           <input placeholder="비밀번호"/>
         </div>
-        <button>
+        <button onClick={()=>{
+          var copy = JSON.parse([props.login])
+          copy = !copy
+          props.setLogin(copy)
+
+        }}>
           로그인
         </button>
       </div>
