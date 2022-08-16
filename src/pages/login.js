@@ -15,7 +15,6 @@ function Login(props) {
           var copy = JSON.parse([props.login])
           copy = !copy
           props.setLogin(copy)
-
         }}>
           로그인
         </button>
