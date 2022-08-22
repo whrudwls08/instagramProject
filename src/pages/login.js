@@ -1,3 +1,7 @@
+import LoginButton from "../components/login/loginButton"
+import SignUp from "../components/login/signUpButton"
+// import "../css/login.css"
+
 function Login(props) {
   return(
     <div className="section">
@@ -11,13 +15,8 @@ function Login(props) {
         <div className="loginFormPw">
           <input placeholder="비밀번호"/>
         </div>
-        <button onClick={()=>{
-          var copy = JSON.parse([props.login])
-          copy = !copy
-          props.setLogin(copy)
-        }}>
-          로그인
-        </button>
+        <LoginButton login = {props.login} setLogin = {props.setLogin}/>
+        <SignUp navigate={props.navigate} signUp={props.signUp} setSignUp={props.setSignUp}/>
       </div>
     </div>
   )

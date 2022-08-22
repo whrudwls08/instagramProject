@@ -217,34 +217,6 @@
   margin-bottom: 40px;
   background-color: red;
 }
-.loginForm{
-  border: solid 2px rgb(133, 133, 128);
-  margin-top: 100px;
-  background-color: white;
-  width: 350px;
-  height: 400px;
-  text-align: center;
-}
-.loginForm > .loginFormTitle{
-  margin: 25px 0px 40px
-}
-.loginForm > .loginFormTitle > span {
-  font-size: 40px;
-}
-
-.loginForm > div > input {
-  width: 250px;
-  height: 30px;
-  margin-bottom: 10px;
-}
-.loginForm > button {
-  margin-top: 10px;
-  width: 260px;
-  height: 30px;
-  border-radius: 4px;
-  border: solid 1px;
-  background-color: rgb(108, 196, 221);
-}
 .modal{
   width: 700px;
   height: 700px;

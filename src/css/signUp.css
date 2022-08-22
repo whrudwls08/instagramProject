@@ -1,0 +1,20 @@
+.signUpForm{
+  border: solid 2px rgb(133, 133, 128);
+  margin-top: 100px;
+  background-color: white;
+  width: 350px;
+  height: 600px;
+  text-align: center;
+}
+.signUpForm > .loginFormTitle{
+  margin: 25px 0px 40px
+}
+.signUpForm > .loginFormTitle > span {
+  font-size: 40px;
+}
+
+.signUpForm > div > input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 10px;
+}
