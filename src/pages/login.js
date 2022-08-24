@@ -1,6 +1,6 @@
 import LoginButton from "../components/login/loginButton"
 import SignUp from "../components/login/signUpButton"
-// import "../css/login.css"
+import "../css/login.css"
 
 function Login(props) {
   return(

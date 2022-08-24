@@ -8,7 +8,7 @@ function NavOptions(props){
         {
           props.option.map((val, index)=>{
             return(
-              <NavOption val={val} index={index} navigate={props.navigate} />
+              <NavOption key = {"NavOption"+val} val={val} index={index} navigate={props.navigate} />
             )
           })   
         }

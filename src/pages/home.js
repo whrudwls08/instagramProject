@@ -3,7 +3,7 @@ import UserStoreList from '../components/home/userStoreList'
 // import './../App.css'
 
 function Home(props){
-    let [users] = useState(['조경진','김종국','유재석','강호동','유재석',])
+    let [users] = useState(['조경진','김종국','유재석','강호동','홍길동'])
     return(
         <div className="section">
           <div className="usersPost">
@@ -11,7 +11,7 @@ function Home(props){
               <div className="userStoreList">
                 {
                 users.map((val, index) => {
-                  return <UserStoreList val={val} index={index} />;
+                  return <UserStoreList key={"User"+val} val={val} index={index} />;
                 })
                 } 
               </div>
