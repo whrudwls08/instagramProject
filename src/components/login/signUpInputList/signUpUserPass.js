@@ -1,9 +1,7 @@
-function SignUpUserPass(props){
+export const SignUpUserPass=(props)=>{
   return(
-    <input className='d' 
+    <input className='signUpUserPassInput' 
         placeholder={props.signListTemp[3]}
         />
   )
 }
-
-export default SignUpUserPass

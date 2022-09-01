@@ -1,9 +1,7 @@
-function SignUpUserId(props){
+export const SignUpUserId=(props)=>{
   return(
-    <input className='d' 
+    <input className='signUpUserIdInput' 
         placeholder={props.signListTemp[2]}
         />
   )
 }
-
-export default SignUpUserId

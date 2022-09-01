@@ -6,7 +6,7 @@ import SignUpInput from "./signUpInput"
 function SignUpForm(props) {
   var [signList] = useState([{"phone":"휴대폰 번호 또는 이메일 주소"},{"name":"성명"},{"userId":"사용자 이름"},{"userPass":"비밀번호"}])
   var [signListTemp] = useState({"0":"휴대폰 번호 또는 이메일 주소","1":"성명","2":"사용자 이름","3":"비밀번호"})
-
+  // var 
   return (
       /**
      * 1. 로고 
