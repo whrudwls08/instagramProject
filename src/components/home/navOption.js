@@ -15,10 +15,10 @@ function NavOptions(props){
         {
           modal === true ? <OpenModal/> : null
         }
-        <button onClick={()=>{
+        {/* <button onClick={()=>{
           console.log(modal);
           setModal(!modal)
-        }}></button>
+        }}></button> */}
       </div> 
     )
   }
