@@ -1,13 +1,14 @@
-function UserStoreList(props){
-    return(
-      <div className='userStoreListuserList'>
-        <div className={'userStoreListuserList'+props.index+' userImage'}>
-        </div>
-        <div className='userStoreListName'>
-          <span>{props.val}</span>
-        </div>
+function UserStoreList(props) {
+  return (
+    <div className='userStoreListuserList'>
+      <div className={'userStoreListuserList' + props.index + ' userImage'}>
+        <img src={'./img/' + props.val + '.png'}></img>
       </div>
-    )
-  }
+      <div className='userStoreListName'>
+      </div>
+      <span>{props.val}</span>
+    </div>
+  )
+}
 
-  export default UserStoreList;
+export default UserStoreList;
