@@ -31,7 +31,8 @@ function NavOption(props) {
       }
     }} >
       <img src={'./img/' + props.val + '.png'} alt="optionList" onClick={() => {
-        props.val === 'new' ? <OpenModal /> : console.log('er');
+        // props.val === 'new' ? <OpenModal /> : console.log('er');
+        // props.val === 'new' && <OpenModal />
       }} ></img>
     </div>
   )

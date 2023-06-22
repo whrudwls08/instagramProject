@@ -5,7 +5,7 @@ function MyPagePost() {
       {
         temp.map((val, index) => {
           return (
-            <MyPage val={val} index={index}></MyPage>
+            <MyPage val={val} index={index} key={val}></MyPage>
           )
         })
       }
@@ -13,9 +13,8 @@ function MyPagePost() {
   )
 }
 function MyPage(props) {
-  console.log(props)
   return (
-    <div className={"myPagePost" + props.index}>
+    <div className={"myPagePost" + props.index} key="{props.key}">
       <img src={'./img/zoo' + props.val + '.jpg'}></img>
     </div>
   )
